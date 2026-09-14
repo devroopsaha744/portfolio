@@ -1,0 +1,136 @@
+% Public résumé source for devroopsaha744.github.io/portfolio.
+% Phone number intentionally omitted: this repo is public and git history is permanent.
+% Build: tectonic -o ../public resume/main.tex  (see README)
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{2.3in}
+\urlstyle{same}
+\flushbottom
+\raggedright
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-3pt}}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}}
+\newcommand{\resumeProjectHeading}[2]{%
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small \textbf{#1} & {\small #2}\\
+    \end{tabular*}\vspace{-8pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}] } 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\begin{document}
+\begin{center}
+{\Huge \textbf{Devroop Saha}} \\ \vspace{2pt}
+Bengaluru, Karnataka, India \\ \vspace{2pt}
+\small \href{mailto:devroopsaha844@gmail.com}{devroopsaha844@gmail.com} ~ | ~ 
+\underline{\href{https://www.linkedin.com/in/devroop-saha-datafreak/}{\textbf{LinkedIn}}} ~ | ~ 
+\underline{\href{https://github.com/devroopsaha744}{\textbf{GitHub}}} ~ | ~ 
+\underline{\href{https://leetcode.com/u/bouncy_hufflepuff/}{\textbf{LeetCode}}} ~ | ~
+\underline{\href{https://medium.com/@datafreakai}{\textbf{Medium}}}
+\end{center}
+\vspace{-6pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Ajay Kumar Garg Engineering College}{Nov. \textbf{2022} -- Jun \textbf{2026}}
+    {Bachelor of Technology in Computer Science (\textbf{8.55 CGPA})}{Ghaziabad, Uttar Pradesh}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+ \resumeSubheading
+    {Kim CC}{Jul. \textbf{2026} -- \textbf{Present}}
+    {Software Engineer}{Bengaluru, India}
+\resumeItemListStart
+  \resumeItem{Built \textbf{Persona training} and \textbf{intent-scoped response strategies} end to end: \textbf{LLM generation pipelines}, CRUD APIs, and full create/validation UIs, consumed by the Python AI engine so non-engineers control brand voice and how the AI answers each intent.}
+  \resumeItem{Built the \textbf{AI Operating Settings} surface: per-intent filtering toggles over a ported \textbf{intent classifier}, all \textbf{9 system guardrails} configurable per account with policy assembled from the database, auto thresholds, and a \textbf{confidence check} and \textbf{stale-response gate} deciding when the AI answers versus escalates.}
+  \resumeItem{Delivered \textbf{multi-brand support} across the platform for enterprise accounts running several brands in one workspace: brand management with inbox assignment, server-to-server \textbf{normalizer APIs} resolving each ticket to a brand, and brand-scoped analytics and agent scorecards.}
+  \resumeItem{Designed a \textbf{6-layer eval cascade} for the AI engine with \textbf{LLM-as-judge} scoring and \textbf{Langfuse} telemetry, turning response quality into per-layer metrics that pinpoint which stage produced a bad answer.}
+  \resumeItem{Instrumented the engine \textbf{feature by feature} with metrics across guardrails, knowledge base, rule-engine workers, and tool runners, and defined the \textbf{alert rules} on top, so each feature alarms on its own failure modes.}
+  \resumeItem{Surfaced the AI's \textbf{thinking steps} as live progress events from the Python engine through to the agent UI, and added \textbf{visitor page-trail tracking} to live chat so agents see which pages a customer browsed before opening a ticket.}
+  \resumeItem{Integrated \textbf{Skio}, \textbf{Trustpilot}, \textbf{Klaviyo}, \textbf{Yotpo}, \textbf{Reviews.io}, \textbf{USPS}, \textbf{ShipBob}, and \textbf{Google Sheets} into the agent tool layer, and migrated \textbf{ShipStation} to API v2.}
+  \resumeItem{Improved the \textbf{Pulse analytics} product with sentiment and tag filters, background \textbf{CSV exports}, and \textbf{LLM-analysed CX reports} emailed as PDF.}
+\resumeItemListEnd
+  \resumeSubheading
+    {Kim CC}{Nov. \textbf{2025} -- Jun. \textbf{2026}}
+    {AI Engineering Intern}{Bengaluru, India}
+\resumeItemListStart
+  \resumeItem{Improved AI response accuracy and workflow coverage from \textbf{18\% to 60\%} by redesigning extraction logic, retrieval workflows, validation layers, and fallback handling.}
+  \resumeItem{Implemented \textbf{hybrid product search} using \textbf{Qdrant} dense+sparse retrieval for Shopify product discovery, improving retrieval accuracy from \textbf{20\% to 100\%}.}
+  \resumeItem{Developed a \textbf{graph-based workflow execution engine} for orchestrating multi-step AI pipelines, tool calls, routing logic, and asynchronous task execution.}
+  \resumeItem{Shipped \textbf{webhook ingestion pipelines} for \textbf{Zoho} and \textbf{Gorgias} plus a \textbf{Zoho Desk extension}, letting agents generate, review, and send AI-assisted replies inside the helpdesk UI.}
+\resumeItemListEnd
+  \resumeSubheading
+    {Daily Wellness AI}{Mar. \textbf{2025} -- Aug. \textbf{2025}}
+    {AI Engineering Intern}{Remote, San Diego, CA}
+\resumeItemListStart
+  \resumeItem{Developed an \textbf{AI assessment tool} using \textbf{OpenAI SDK} with \textbf{Structured Output} to evaluate free-form Q\&A and recommend tailored service packages.}
+  \resumeItem{Reduced agent processing latency from \textbf{90s} to \textbf{30s} with \textbf{threading} for concurrent tool calls, and orchestrated deployment on \textbf{FastAPI}, \textbf{Docker}, and \textbf{AWS EC2}, compressing images from \textbf{1 GB} to \textbf{158 MB} with \textbf{CI/CD}.}
+\resumeItemListEnd
+  \resumeSubheading
+    {GST Magic AI}{Aug. \textbf{2025} -- Sep. \textbf{2025}}
+    {Freelance AI Engineer}{Remote}
+\resumeItemListStart
+  \resumeItem{Engineered a \textbf{document management tool} for \textbf{GST PDFs} with embedded metadata and status tracking, and deployed a \textbf{RAG-based assistant} on the \textbf{Pinecone Assistant API}.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{Julius AI (AI Interviewer)} $|$ \textit{Next.js, Node.js, MongoDB, Redis}} 
+    {\underline{\href{https://github.com/devroopsaha744/julius_ai}{GitHub}} $|$ \underline{\href{https://youtu.be/gQ2PJVzWenE}{Demo}}}
+    \resumeItemListStart
+        \resumeItem{Developed an \textbf{AI voice agent} conducting \textbf{6-stage} conversational interviews followed by \textbf{AI-curated coding challenges} and automated hiring recommendations, at \textbf{800ms} end-to-end latency over \textbf{WebSockets} with \textbf{Deepgram STT} and \textbf{ElevenLabs TTS}.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item \textbf{Languages:} Python, TypeScript, JavaScript, Go, SQL, HTML, CSS \\
+    \textbf{Technologies/Frameworks:} PyTorch, TensorFlow, LangChain, Next.js, Node.js, FastAPI, gRPC, Docker, AWS \\
+    \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis, Pinecone, FAISS, Qdrant \\
+    \textbf{Domain Expertise:} Machine Learning, Deep Learning, NLP, Retrieval-Augmented Generation, AI Agents
+  }
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+      \item \textbf{Runner-up} in an \textbf{All-India hackathon (Sparrowthon)} with over \textbf{350 participants}.
+      \item \textbf{4th Place} in the \textbf{Data Analytics Competition} at \textbf{NSSC, IIT Kharagpur} among \textbf{450+ participants}.
+    }
+\end{itemize}
+\end{document}

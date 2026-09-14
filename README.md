@@ -24,7 +24,7 @@ npm run dev     # http://localhost:3000/portfolio
 Node 20.9+ is required (Next 15 won't start on older).
 
 To check what actually ships, build the export and serve it under the `/portfolio`
-base path — serving `out/` at the web root will 404 on every asset:
+base path. Serving `out/` at the web root will 404 on every asset:
 
 ```bash
 npm run build
@@ -33,7 +33,7 @@ mkdir -p /tmp/site && cp -r out /tmp/site/portfolio && npx serve /tmp/site -p 41
 
 ## Editing content
 
-All copy lives in `src/data/` as plain TypeScript — no JSX to touch:
+All copy lives in `src/data/` as plain TypeScript, no JSX to touch:
 
 | File | What it holds |
 |---|---|
@@ -46,20 +46,27 @@ All copy lives in `src/data/` as plain TypeScript — no JSX to touch:
 
 ## Résumé
 
-`public/Devroop_Saha_Resume.pdf` is rendered inline on the site and offered as a
-download. It is a **redacted copy**: the phone number was removed from the source
-PDF before committing, because this repo is public and git history is permanent.
-Email and every profile link are unchanged.
+The source of truth is `resume/main.tex`. Rebuild the PDF after editing it:
 
-To publish an updated résumé, redact it the same way before committing — don't
-drop the raw export in.
+```bash
+brew install tectonic      # one-time
+tectonic -o public resume/main.tex && mv public/main.pdf public/Devroop_Saha_Resume.pdf
+```
+
+Two things to know:
+
+- **The committed source has no phone number.** This repo is public and git
+  history is permanent. The private master (`~/main.tex`) keeps the phone for job
+  applications; the two are otherwise identical. Don't paste the phone back in here.
+- **Keep it to one page.** Check with `tectonic` output, or open the PDF. If it
+  spills, tighten bullet wording before deleting whole bullets.
 
 ## Data pulled in at build time
 
-- **Medium posts** — read from the public RSS feed at `medium.com/feed/@datafreakai`.
+- **Medium posts**: read from the public RSS feed at `medium.com/feed/@datafreakai`.
   If the feed is unreachable the build falls back to the snapshot in
   `src/data/medium-fallback.json` rather than failing.
-- **GitHub stars** — refreshed from the GitHub API, falling back to the counts
+- **GitHub stars**: refreshed from the GitHub API, falling back to the counts
   baked into `projects.ts`.
 
 Both are frozen into the export, so the nightly workflow run is what keeps them
@@ -70,7 +77,7 @@ fresh on a static host.
 The form posts to [Web3Forms](https://web3forms.com/#start). Until a key is set it
 degrades to a plain mailto link.
 
-1. Enter your email at https://web3forms.com/#start — they send you an access key.
+1. Enter your email at https://web3forms.com/#start. They send you an access key.
 2. Add it as a repository secret named `NEXT_PUBLIC_WEB3FORMS_KEY`
    (Settings → Secrets and variables → Actions).
 3. Re-run the deploy workflow.
