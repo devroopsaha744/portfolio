@@ -21,7 +21,7 @@ export const experience: Role[] = [
       "Designed a 6-layer eval cascade for the AI engine with LLM-as-judge scoring and Langfuse telemetry, turning response quality into per-layer metrics that pinpoint which stage produced a bad answer.",
       "Instrumented the engine feature by feature with metrics across guardrails, knowledge base, rule-engine workers and tool runners, and defined the alert rules on top, so each feature alarms on its own failure modes instead of one blanket service alarm.",
       "Surfaced the AI's thinking steps as live progress events from the Python engine through to the agent UI, and added visitor page-trail tracking to live chat so agents can see which pages a customer browsed before opening a ticket.",
-      "Integrated Skio, Trustpilot, Klaviyo, Yotpo, Reviews.io, USPS, ShipBob and Google Sheets into the agent tool layer, and migrated ShipStation to API v2.",
+      "Integrated Skio, Trustpilot, Klaviyo, Yotpo, Reviews.io, USPS, ShipStation, ShipBob and Google Sheets into the agent tool layer.",
       "Improved the Pulse analytics product with sentiment and per-account tag filters, background CSV exports, and LLM-analysed CX reports emailed as PDF.",
     ],
   },
