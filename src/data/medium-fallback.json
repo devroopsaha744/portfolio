@@ -1,0 +1,96 @@
+[
+  {
+    "title": "How I Cut AI Agent Latency from 90s to 20s Using Python Threads",
+    "link": "https://medium.com/@datafreakai/how-i-cut-ai-agent-latency-from-90s-to-20s-using-python-threads-f61f459dfc8b",
+    "date": "2025-06-17T00:45:13+05:30",
+    "tags": [],
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/1*Hhx5TCySv1TCoDD5nPkuOg.png",
+    "excerpt": "How I transformed a sluggish AI agent into a performance powerhouse using Python’s parallelization capabilities Picture this: you’re building an AI agent that needs to make dozens…"
+  },
+  {
+    "title": "From Disks to Elevators: Applying Scheduling Algorithms for Optimal Movement",
+    "link": "https://medium.com/@datafreakai/from-disks-to-elevators-applying-scheduling-algorithms-for-optimal-movement-8784fa0ea9e8",
+    "date": "2024-09-14T14:13:49+05:30",
+    "tags": [
+      "operating-systems",
+      "algorithms",
+      "low-level-programming",
+      "computer-science"
+    ],
+    "coverImage": "https://cdn-images-1.medium.com/max/564/0*ZqP9GFwDBfIaFtc1.jpg",
+    "excerpt": "Elevators are such an excellent invention of human civilization. Imagine with a press of a button, you are at the topmost floor of 50 story building in a matter of minutes. One tim…"
+  },
+  {
+    "title": "Leveraging Language Models for Advanced Mathematical Computation and Problem Solving",
+    "link": "https://medium.com/@datafreakai/leveraging-language-models-for-advanced-mathematical-computation-and-problem-solving-cbd396e7a6e7",
+    "date": "2024-06-23T13:16:43+05:30",
+    "tags": [
+      "mathematics",
+      "llm",
+      "ai",
+      "artificial-intelligence"
+    ],
+    "coverImage": "https://cdn-images-1.medium.com/max/564/0*Cdp2CQhBo1EGQsMV.jpg",
+    "excerpt": "In 2024, with the rising popularity of Generative AI and AI being a buzzword, LLMs are everywhere. And the reason LLMs are everywhere is because they are like a ‘Jack of all trades…"
+  },
+  {
+    "title": "Enhancing Code Documentation with RAG-Based Q&A Systems: A New Frontier in Developer Support",
+    "link": "https://medium.com/@datafreakai/enhancing-code-documentation-with-rag-based-q-a-systems-a-new-frontier-in-developer-support-b9f2042031fe",
+    "date": "2024-06-14T13:26:52+05:30",
+    "tags": [
+      "python",
+      "llm-applications",
+      "generative-ai-use-cases",
+      "artificial-intelligence"
+    ],
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/0*sF3Syhib1WrafFHT.png",
+    "excerpt": "So as developers, when we are developing software, we all have to take the help of the documentation, it’s a cannon event. Even though ChatGPT is there to help developers, there is…"
+  },
+  {
+    "title": "FitVid: AI-powered visual gym",
+    "link": "https://medium.com/@datafreakai/fitvid-ai-powered-visual-gym-42336427f5c1",
+    "date": "2024-06-05T22:35:18+05:30",
+    "tags": [],
+    "coverImage": "https://cdn-images-1.medium.com/max/1024/0*qKTX7vlVAAwZfCyz",
+    "excerpt": "This article explains my latest project: FitVid, an AI-powered visual gym that tracks the movements of the gym exercises, counts the repetitions, and helps improve the form of gym…"
+  },
+  {
+    "title": "A Comprehensive Guide to CNNs Part-1: The Fundamentals",
+    "link": "https://medium.com/@datafreakai/a-comprehensive-guide-to-cnns-part-1-the-fundamentals-f056a9accbbb",
+    "date": "2024-01-26T16:00:37+05:30",
+    "tags": [
+      "neural-networks",
+      "deep-learning",
+      "artificial-intelligence",
+      "computer-vision"
+    ],
+    "coverImage": "https://cdn-images-1.medium.com/max/581/0*048u_UdeXt-xPAIZ.png",
+    "excerpt": "So, What is CNN? In fact, what is a Neural Network for that matter? Well, a Neural network is like an artificial brain that can intelligently do stuff. Computer Scientists have cre…"
+  },
+  {
+    "title": "Detailed Explanation, In-depth Intuition, and Python implementation of Bagging and Random Forest",
+    "link": "https://medium.com/@datafreakai/detailed-explanation-in-depth-intuition-and-python-implementation-of-bagging-and-random-forest-7cca07c5d0a6",
+    "date": "2023-12-11T00:11:42+05:30",
+    "tags": [
+      "machine-learning",
+      "ai",
+      "mathematics",
+      "data-science"
+    ],
+    "coverImage": "https://cdn-images-1.medium.com/max/612/0*nRNwPOFV-uB5tMog",
+    "excerpt": "In this article, we will dive into the concept of Bagging and study one of the most famous and used algorithms in Industry and Kaggle competitions: Random Forests. The only pre-req…"
+  },
+  {
+    "title": "Understanding Categorical Encoding",
+    "link": "https://medium.com/@datafreakai/understanding-categorical-encoding-bdd8a17a6d2b",
+    "date": "2023-11-10T22:58:56+05:30",
+    "tags": [
+      "data-preprocessing",
+      "statistics",
+      "data-science",
+      "machine-learning"
+    ],
+    "coverImage": "https://cdn-images-1.medium.com/max/612/0*rWJd01bUdXcHxRsK",
+    "excerpt": "In this article, we will try to understand what is a categorical data, what is categorical Encoding, why to perform encoding and How to perform encoding. I will try to explain all…"
+  }
+]
