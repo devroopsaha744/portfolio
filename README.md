@@ -44,6 +44,16 @@ All copy lives in `src/data/` as plain TypeScript — no JSX to touch:
 | `skills.ts` | Skill groups |
 | `achievements.ts` | Awards and placements |
 
+## Résumé
+
+`public/Devroop_Saha_Resume.pdf` is rendered inline on the site and offered as a
+download. It is a **redacted copy**: the phone number was removed from the source
+PDF before committing, because this repo is public and git history is permanent.
+Email and every profile link are unchanged.
+
+To publish an updated résumé, redact it the same way before committing — don't
+drop the raw export in.
+
 ## Data pulled in at build time
 
 - **Medium posts** — read from the public RSS feed at `medium.com/feed/@datafreakai`.

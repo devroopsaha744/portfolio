@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
+import { Resume } from "@/components/sections/Resume";
 import { Projects } from "@/components/sections/Projects";
 import { Writing } from "@/components/sections/Writing";
 import { Skills } from "@/components/sections/Skills";
@@ -22,6 +23,7 @@ export default async function Home() {
         <Hero />
         <About />
         <Experience />
+        <Resume />
         <Projects projects={projects} />
         <Writing posts={posts} />
         <Skills />

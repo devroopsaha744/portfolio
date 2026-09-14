@@ -8,6 +8,7 @@ import {
   LinkedInIcon,
   MailIcon,
   MediumIcon,
+  XIcon,
 } from "@/components/Icons";
 
 const LINKS = [
@@ -18,6 +19,7 @@ const LINKS = [
     handle: "devroop-saha-datafreak",
     Icon: LinkedInIcon,
   },
+  { href: profile.socials.x, label: "X", handle: "@Devroop_saha", Icon: XIcon },
   { href: profile.socials.medium, label: "Medium", handle: "@datafreakai", Icon: MediumIcon },
   {
     href: profile.socials.leetcode,
@@ -32,7 +34,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
       <SectionHeading
-        kicker="07 / contact"
+        kicker="08 / contact"
         title="Say something"
         lead="Hiring, collaborating, or just want to argue about the GOAT debate — the form goes straight to my inbox."
       />

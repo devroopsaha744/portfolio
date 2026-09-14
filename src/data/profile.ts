@@ -8,10 +8,12 @@ export const profile = {
   location: "Bengaluru, India",
   email: "devroopsaha844@gmail.com",
   currentRole: "AI Engineering Intern @ Kim CC",
+  resume: "/Devroop_Saha_Resume.pdf",
   socials: {
     github: "https://github.com/devroopsaha744",
     linkedin: "https://www.linkedin.com/in/devroop-saha-datafreak/",
     medium: "https://medium.com/@datafreakai",
     leetcode: "https://leetcode.com/u/bouncy_hufflepuff/",
+    x: "https://x.com/Devroop_saha",
   },
 } as const;

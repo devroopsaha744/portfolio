@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 export function Skills() {
   return (
     <section id="skills" className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
-      <SectionHeading kicker="05 / toolkit" title="What I work with" />
+      <SectionHeading kicker="06 / toolkit" title="What I work with" />
 
       <div className="grid gap-5 sm:grid-cols-2">
         {skills.map((group, index) => (
@@ -31,7 +31,7 @@ export function Skills() {
       </div>
 
       <div className="mt-20">
-        <SectionHeading kicker="06 / receipts" title="Things I won" />
+        <SectionHeading kicker="07 / receipts" title="Things I won" />
 
         <ul className="space-y-px overflow-hidden rounded-2xl border border-line bg-line">
           {achievements.map((achievement, index) => (

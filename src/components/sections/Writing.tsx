@@ -17,7 +17,7 @@ export function Writing({ posts }: { posts: Post[] }) {
   return (
     <section id="writing" className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
       <SectionHeading
-        kicker="04 / writing"
+        kicker="05 / writing"
         title="I write things down"
         lead="Explaining a concept is how I find out whether I actually understood it. These are pulled live from my Medium feed."
       />

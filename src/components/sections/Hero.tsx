@@ -3,18 +3,22 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { profile } from "@/data/profile";
+import { asset } from "@/lib/paths";
 import {
   ArrowUpRightIcon,
+  DownloadIcon,
   GitHubIcon,
   LeetCodeIcon,
   LinkedInIcon,
   MailIcon,
   MediumIcon,
+  XIcon,
 } from "@/components/Icons";
 
 const SOCIALS = [
   { href: profile.socials.github, label: "GitHub", Icon: GitHubIcon },
   { href: profile.socials.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
+  { href: profile.socials.x, label: "X", Icon: XIcon },
   { href: profile.socials.medium, label: "Medium", Icon: MediumIcon },
   { href: profile.socials.leetcode, label: "LeetCode", Icon: LeetCodeIcon },
   { href: `mailto:${profile.email}`, label: "Email", Icon: MailIcon },
@@ -132,6 +136,14 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-line-strong px-6 py-3 text-sm font-medium text-fg transition-colors hover:border-garnet hover:text-garnet-lit"
           >
             Get in touch
+          </a>
+          <a
+            href={asset(profile.resume)}
+            download
+            className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm text-muted transition-colors hover:text-fg"
+          >
+            <DownloadIcon />
+            Résumé
           </a>
 
           <div className="ml-1 flex items-center gap-1">

@@ -19,7 +19,7 @@ export function Projects({ projects }: { projects: Project[] }) {
   return (
     <section id="projects" className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 md:py-32">
       <SectionHeading
-        kicker="03 / selected work"
+        kicker="04 / selected work"
         title="Things I built"
         lead="Six of them. Voice agents, MCP servers, a CLI people actually pip install, and some computer vision that judges your squat form."
       />
