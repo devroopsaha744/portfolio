@@ -21,7 +21,7 @@ export function PostImage({ src, alt }: { src: string | null; alt: string }) {
   }
 
   return (
-    // Remote Medium CDN, unoptimized under static export — next/image adds
+    // Remote Medium CDN, unoptimized under static export. next/image adds
     // nothing here and cannot carry an onError fallback as cleanly.
     // eslint-disable-next-line @next/next/no-img-element
     <img

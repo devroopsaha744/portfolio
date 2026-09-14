@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Design tokens — dark only, blaugrana accents.
+   Design tokens: dark only, blaugrana accents.
    Garnet + blue are FC Barcelona's colours; used as accent gradients rather
    than as blocks of colour, so the site reads as an engineer's site first.
 --------------------------------------------------------------------------- */

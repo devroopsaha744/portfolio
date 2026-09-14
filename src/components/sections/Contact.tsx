@@ -36,7 +36,7 @@ export function Contact() {
       <SectionHeading
         kicker="08 / contact"
         title="Say something"
-        lead="Hiring, collaborating, or just want to argue about the GOAT debate — the form goes straight to my inbox."
+        lead="Hiring, collaborating, or just want to argue about the GOAT debate. The form goes straight to my inbox."
       />
 
       <div className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:gap-10">

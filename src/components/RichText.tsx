@@ -9,7 +9,7 @@ export function RichText({ children }: { children: string }): ReactNode {
   const parts = children.split(/\*([^*]+)\*/g);
 
   return parts.map((part, index) =>
-    // Odd indices are the captured groups — i.e. the emphasised runs.
+    // Odd indices are the captured groups, i.e. the emphasised runs.
     index % 2 === 1 ? (
       <em key={index} className="italic text-fg/90">
         {part}

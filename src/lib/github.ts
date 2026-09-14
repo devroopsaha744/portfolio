@@ -4,7 +4,7 @@ import { projects, type Project } from "@/data/projects";
  * Refreshes star counts at build time.
  *
  * Unauthenticated GitHub API calls are rate-limited per IP, and CI runners share
- * addresses — so this authenticates with GITHUB_TOKEN when one is present and
+ * addresses, so this authenticates with GITHUB_TOKEN when one is present and
  * falls back to the counts baked into src/data/projects.ts otherwise. A stale
  * star count is never worth a failed build.
  */
@@ -32,7 +32,7 @@ export async function getProjectsWithStars(): Promise<Project[]> {
 
         return { ...project, stars: data.stargazers_count };
       } catch (error) {
-        console.warn(`[github] using baked star count — ${(error as Error).message}`);
+        console.warn(`[github] using baked star count: ${(error as Error).message}`);
         return project;
       }
     }),

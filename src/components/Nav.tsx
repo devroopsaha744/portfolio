@@ -126,7 +126,7 @@ export function Nav() {
         </nav>
       </header>
 
-      {/* Sibling of <header> on purpose — see the comment above. */}
+      {/* Sibling of <header> on purpose; see the comment above. */}
       <div
         className={`fixed inset-0 z-40 bg-ink/[0.98] transition-opacity duration-300 md:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"

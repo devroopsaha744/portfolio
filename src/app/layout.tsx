@@ -25,7 +25,7 @@ const SITE_URL = "https://devroopsaha744.github.io/portfolio";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Devroop Saha — AI Engineer",
+  title: "Devroop Saha | AI Engineer",
   description:
     "AI engineer building production LLM systems: RAG pipelines, agents, hybrid retrieval. Currently at Kim CC. Culé, LeetCode grinder, and occasional writer.",
   keywords: [
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "Devroop Saha — AI Engineer",
+    title: "Devroop Saha | AI Engineer",
     description:
       "AI engineer building production LLM systems: RAG pipelines, agents, hybrid retrieval. Currently at Kim CC.",
     siteName: "Devroop Saha",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Devroop Saha — AI Engineer",
+    title: "Devroop Saha | AI Engineer",
     description:
       "AI engineer building production LLM systems: RAG pipelines, agents, hybrid retrieval.",
   },

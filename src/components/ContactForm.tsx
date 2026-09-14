@@ -7,7 +7,7 @@ import { profile } from "@/data/profile";
  * Web3Forms access key. This is a NEXT_PUBLIC_ value on purpose: the site is a
  * static export with no server, so the POST happens from the browser and the key
  * is designed by Web3Forms to be public. It only permits submissions to the
- * address the key was issued for — it cannot read anything.
+ * address the key was issued for, and it cannot read anything.
  *
  * Grab one at https://web3forms.com/#start and set it as the
  * NEXT_PUBLIC_WEB3FORMS_KEY repository secret. Until then the form degrades to
@@ -28,7 +28,7 @@ export function ContactForm() {
     return (
       <div className="card p-6 sm:p-7">
         <p className="text-[15px] leading-relaxed text-muted">
-          The contact form isn&rsquo;t wired up yet — no form key configured. In the
+          The contact form isn&rsquo;t wired up yet. No form key is configured. In the
           meantime, email works perfectly well:
         </p>
         <a
@@ -80,7 +80,7 @@ export function ContactForm() {
       <div className="card flex flex-col items-start gap-3 p-6 sm:p-7">
         <span className="font-display text-3xl uppercase text-gradient">Sent</span>
         <p className="text-[15px] leading-relaxed text-muted">
-          Got it — that landed in my inbox. I&rsquo;ll reply as soon as I&rsquo;m not
+          Got it. That landed in my inbox. I&rsquo;ll reply as soon as I&rsquo;m not
           mid-match.
         </p>
         <button
@@ -96,7 +96,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="card space-y-4 p-6 sm:p-7">
-      {/* Honeypot — bots fill this, humans never see it. */}
+      {/* Honeypot: bots fill this, humans never see it. */}
       <input
         type="checkbox"
         name="botcheck"

@@ -93,7 +93,7 @@ function parseFeed(xml: string): Post[] {
  *
  * The feed is a third party we don't control, so a build must never fail on it:
  * any error falls back to the snapshot committed at src/data/medium-fallback.json.
- * On GitHub Pages the result is baked into the export — the nightly Actions
+ * On GitHub Pages the result is baked into the export; the nightly Actions
  * rebuild is what keeps the list current.
  */
 export async function getPosts(): Promise<Post[]> {

@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
-  /** Stagger index — each step delays the reveal by 70ms. */
+  /** Stagger index; each step delays the reveal by 70ms. */
   delay?: number;
   className?: string;
 };

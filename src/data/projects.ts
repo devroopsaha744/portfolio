@@ -1,5 +1,5 @@
 export type Project = {
-  /** GitHub repo name — also the key used to refresh star counts at build time. */
+  /** GitHub repo name, also the key used to refresh star counts at build time. */
   repo: string;
   name: string;
   blurb: string;
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     repo: "TexMCP",
     name: "TexMCP",
     blurb:
-      "A FastMCP microservice that renders LaTeX to PDF, exposed as MCP tools so any model-context-protocol client — Claude Desktop included — can typeset documents on demand. Small, boring, and it does exactly one thing properly.",
+      "A FastMCP microservice that renders LaTeX to PDF, exposed as MCP tools so any model-context-protocol client, Claude Desktop included, can typeset documents on demand. Small, boring, and it does exactly one thing properly.",
     stack: ["Python", "FastMCP", "LaTeX", "MCP"],
     github: "https://github.com/devroopsaha744/TexMCP",
     stars: 11,
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     repo: "fastapi-scaffold",
     name: "fastapi-scaffold",
     blurb:
-      "A CLI that generates a FastAPI project the way you'd actually structure one — optional auth, database wiring, ML model setup, Docker. Published on PyPI and installed by people I've never met, which is still the most satisfying metric I have.",
+      "A CLI that generates a FastAPI project the way you'd actually structure one: optional auth, database wiring, ML model setup, Docker. Published on PyPI and installed by people I've never met, which is still the most satisfying metric I have.",
     stack: ["Python", "FastAPI", "CLI", "Docker", "PyPI"],
     github: "https://github.com/devroopsaha744/fastapi-scaffold",
     demo: { label: "View on PyPI", url: "https://pypi.org/project/fastapi-scaffold/" },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     repo: "Elevate",
     name: "Elevate",
     blurb:
-      "Disk scheduling algorithms — FCFS, SSTF, SCAN, LOOK and their circular variants — explained through the analogy of elevators in a building, and animated with Manim. Built because reading the pseudocode never made it click, and watching it move did.",
+      "Disk scheduling algorithms (FCFS, SSTF, SCAN, LOOK and their circular variants) explained through the analogy of elevators in a building, and animated with Manim. Built because reading the pseudocode never made it click, and watching it move did.",
     stack: ["Python", "Manim", "Operating Systems", "Algorithms"],
     github: "https://github.com/devroopsaha744/Elevate",
     demo: {

@@ -38,14 +38,14 @@ export function Resume() {
         </div>
       </Reveal>
 
-      {/* Inline viewer — desktop only. Mobile browsers largely refuse to render
+      {/* Inline viewer, desktop only. Mobile browsers largely refuse to render
           a PDF in an iframe and show a blank box instead, so small screens get
           the card below rather than a dead frame. */}
       <Reveal delay={1}>
         <div className="hidden overflow-hidden rounded-2xl border border-line bg-surface md:block">
           <iframe
             src={`${href}#view=FitH&toolbar=0`}
-            title="Devroop Saha — résumé"
+            title="Devroop Saha résumé"
             className="h-[min(78vh,880px)] w-full"
             loading="lazy"
           />
