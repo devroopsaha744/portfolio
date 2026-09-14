@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Design tokens — dark only, blaugrana accents.
+   Garnet + blue are FC Barcelona's colours; used as accent gradients rather
+   than as blocks of colour, so the site reads as an engineer's site first.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-ink: #08080a;
+  --color-surface: #101014;
+  --color-surface-2: #16161c;
+  --color-line: rgba(255, 255, 255, 0.09);
+  --color-line-strong: rgba(255, 255, 255, 0.16);
+
+  --color-fg: #ececf1;
+  --color-muted: #9a9aa7;
+  --color-faint: #6b6b78;
+
+  --color-garnet: #a50044;
+  --color-garnet-lit: #d1195f;
+  --color-blau: #004d98;
+  --color-blau-lit: #1a6fc4;
+  --color-gold: #edbb00;
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+:root {
+  color-scheme: dark;
+  --accent-gradient: linear-gradient(135deg, #004d98 0%, #a50044 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* sticky nav height, so anchor jumps don't hide headings behind it */
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-fg);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* --- utilities ----------------------------------------------------------- */
+
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Faint pitch-line grid used behind the hero. */
+.pitch-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 20%, transparent 75%);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 1rem;
+  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(165, 0, 68, 0.55);
+  background: var(--color-surface-2);
+}
+
+::selection {
+  background: var(--color-garnet);
+  color: #fff;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Thin scrollbar that matches the palette (WebKit + Firefox). */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a33;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-garnet);
+}
+html {
+  scrollbar-color: #2a2a33 var(--color-ink);
+  scrollbar-width: thin;
+}
