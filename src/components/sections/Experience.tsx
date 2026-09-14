@@ -11,7 +11,7 @@ export function Experience() {
       <SectionHeading
         kicker="02 / experience"
         title="Where I've shipped"
-        lead="Four stints, one theme: taking LLM systems from a demo that impresses to a service that holds up on a Tuesday afternoon under real traffic."
+        lead="Four companies, one theme: taking LLM systems from a demo that impresses to a service that holds up on a Tuesday afternoon under real traffic."
       />
 
       <div className="relative">
