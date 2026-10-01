@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const display = Anton({
@@ -69,6 +70,18 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
+
+        {/* Gorgias chat widget, plus the Gorgias Convert revenue add-on loader.
+            Temporary: added to try the widget out, to be removed later. */}
+        <Script
+          id="gorgias-chat-widget-install-v3"
+          src="https://config.gorgias.chat/bundle-loader/01M3VDJX3TG8HSBRWB0HWKYAE5"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://static.9gtb.com/loader.js?g_cvt_id=f77ce7a3-55a2-4a75-8151-ad413fe8eb1e"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
