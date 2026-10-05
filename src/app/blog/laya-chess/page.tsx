@@ -64,6 +64,17 @@ export default function LayaChessPost() {
             I gave a fast, intuitive AI model a chessboard to see how far it would get. This is version 1 of
             the experiment, and I&apos;ll be releasing improvements soon.
           </p>
+          <p className="mt-5">
+            <a
+              href="https://huggingface.co/spaces/datafreak/laya-chess"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center gap-2 rounded-full border border-line-strong px-5 py-2.5 text-sm text-fg transition-colors hover:border-garnet"
+            >
+              Play against Laya
+              <span aria-hidden="true">↗</span>
+            </a>
+          </p>
           <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.15em] text-faint">
             <time dateTime={post.date}>{formatDate(post.date)}</time> · {post.readingMinutes} min read · Devroop Saha
           </p>
@@ -325,16 +336,31 @@ export default function LayaChessPost() {
             It learned a surprising amount from that, and it clearly has a lot of room left.
           </p>
 
-          <h2>Why you can&apos;t play it online (yet)</h2>
+          <h2>Play it yourself</h2>
           <p>
-            Because Laya judges one move at a time, every position means about 35 passes through a 421M-parameter
-            model. That needs a GPU to feel responsive, and keeping a GPU server running around the clock costs
-            real money every hour it&apos;s on. For an experiment, that didn&apos;t make sense yet, so I couldn&apos;t deploy
-            it publicly.
+            You can play against Laya on{" "}
+            <a href="https://huggingface.co/spaces/datafreak/laya-chess" target="_blank" rel="noreferrer noopener">
+              its Hugging Face Space
+            </a>
+            . It&apos;s the same board as in the video, with an opening book, Laya&apos;s win chance for its candidate
+            moves, and Stockfish&apos;s opinion alongside.
           </p>
           <p>
-            For now it runs locally on my laptop, at about two and a half seconds per position without search.
-            Hence the screenshot at the top instead of a play button.
+            Because Laya judges one move at a time, every position means about 35 passes through a 421M-parameter
+            model. Keeping a GPU server running around the clock for an experiment didn&apos;t make sense, so the
+            Space runs on Hugging Face&apos;s free shared GPUs instead. Expect the first move to take a little while,
+            and Laya&apos;s thinking time is capped at 10 seconds a move.
+          </p>
+          <p>
+            Prefer to run it on your own machine? The code and setup steps are on{" "}
+            <a href="https://github.com/devroopsaha744/LayaChess" target="_blank" rel="noreferrer noopener">
+              GitHub
+            </a>
+            , and the model is on{" "}
+            <a href="https://huggingface.co/datafreak/laya-chess" target="_blank" rel="noreferrer noopener">
+              Hugging Face
+            </a>
+            .
           </p>
 
           <h2>What&apos;s next</h2>
@@ -345,7 +371,6 @@ export default function LayaChessPost() {
             <li>Scoring all the moves of a position at once, so search can look much deeper in the same time.</li>
             <li>Training on more of the data. Two million moves is a small slice of what&apos;s available.</li>
             <li>A measured rating from real rated games instead of an estimate.</li>
-            <li>An online version you can actually play, once it&apos;s cheap enough to host.</li>
           </ul>
 
           <h2>What I&apos;d tell myself at the start</h2>
