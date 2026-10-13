@@ -39,6 +39,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Optional: set this repository secret to switch the contact form on.
           NEXT_PUBLIC_WEB3FORMS_KEY: ${{ secrets.NEXT_PUBLIC_WEB3FORMS_KEY }}
+          # Kim live chat widget. Public values: they end up in the page anyway.
+          NEXT_PUBLIC_KIM_SDK_URL: https://livechat.dev.kim.cc/sdk.js
+          NEXT_PUBLIC_KIM_API_HOST: https://crm.dev.kim.cc
+          NEXT_PUBLIC_KIM_WEBSITE_TOKEN: iCeZdpKMrFiRJYmrNqcGF4yn
         run: npm run build
 
       - uses: actions/configure-pages@v5

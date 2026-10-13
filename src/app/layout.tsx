@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Anton, Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+
+// Kim live chat. Only loads when all three are set: the Pages build sets them in
+// deploy.yml, and .env.local points them at a local candy for development
+const kimSdkUrl = process.env.NEXT_PUBLIC_KIM_SDK_URL;
+const kimApiHost = process.env.NEXT_PUBLIC_KIM_API_HOST;
+const kimWebsiteToken = process.env.NEXT_PUBLIC_KIM_WEBSITE_TOKEN;
 
 const display = Anton({
   subsets: ["latin"],
@@ -69,6 +76,24 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
+
+        {kimSdkUrl && kimApiHost && kimWebsiteToken && (
+          <Script id="kim-live-chat" strategy="afterInteractive">
+            {`(function (d) {
+              var g = d.createElement("script");
+              g.src = ${JSON.stringify(kimSdkUrl)};
+              g.type = "module";
+              g.async = true;
+              g.onload = function () {
+                window.kimSDK.run({
+                  websiteToken: ${JSON.stringify(kimWebsiteToken)},
+                  baseUrl: ${JSON.stringify(kimApiHost)},
+                });
+              };
+              d.body.appendChild(g);
+            })(document);`}
+          </Script>
+        )}
       </body>
     </html>
   );
