@@ -21,7 +21,7 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://devroopsaha744.github.io/portfolio";
+const SITE_URL = "https://dvprsh.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

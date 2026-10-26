@@ -8,7 +8,7 @@ import { formatDate, getBlogPost } from "@/data/blog";
 import { asset } from "@/lib/paths";
 
 const post = getBlogPost("laya-chess");
-const SITE_URL = "https://devroopsaha744.github.io/portfolio";
+const SITE_URL = "https://dvprsh.tech";
 
 export const metadata: Metadata = {
   title: `${post.title} | Devroop Saha`,

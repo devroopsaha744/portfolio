@@ -1,8 +1,8 @@
-# devroopsaha744.github.io/portfolio
+# dvprsh.tech
 
 My personal site. Built with Next.js, exported as static HTML, deployed to GitHub Pages.
 
-**Live:** https://devroopsaha744.github.io/portfolio
+**Live:** https://dvprsh.tech
 
 ## Stack
 
@@ -18,17 +18,16 @@ My personal site. Built with Next.js, exported as static HTML, deployed to GitHu
 
 ```bash
 npm install
-npm run dev     # http://localhost:3000/portfolio
+npm run dev     # http://localhost:3000
 ```
 
 Node 20.9+ is required (Next 15 won't start on older).
 
-To check what actually ships, build the export and serve it under the `/portfolio`
-base path. Serving `out/` at the web root will 404 on every asset:
+To check what actually ships, build the export and serve it:
 
 ```bash
 npm run build
-mkdir -p /tmp/site && cp -r out /tmp/site/portfolio && npx serve /tmp/site -p 4173
+npx serve out -p 4173
 ```
 
 ## Editing content
